@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Quiz Application</title>
+</head>
+<body>
+
+    <div class="QuizApp">
+        <div class="img">
+            <img src="https://blog.stucred.com/wp-content/uploads/2020/07/Study-area.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>Quiz App with fixed time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ex sequi ducimus omnis deserunt reprehenderit repudiandae 
+                nihil ut et mollitia cum quidem, blanditiis expedita magni 
+                ratione quisquam fuga voluptatem voluptates animi?
+                nihil ut et mollitia cum quidem, blanditiis expedita magni 
+                ratione quisquam fuga voluptatem voluptates animi?
+            </p>
+        </div>
+        <div class="MyBtn">
+            <button>Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="QuizRules">
+        <div class="RulesTitle">Some Rules of this Quiz</div>
+        <div class="RulesList">
+            <ol class="list">
+                <li>You will have only <span style="color:red">15 seconds</span> for each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li>You can't exit from quiz while you're attempting.</li>
+                <li>Finally you will get points on the basis of your correct answer.</li>
+            </ol>
+        </div>
+        <div class="Buttons">
+            <button class="ExitButton">Exit Quiz</button>
+            <button class="ContinueButton">Continue</button>
+        </div>
+    </div>
+
+    <div class="Questions">
+        <header class="QuestionHeader">
+            <div class="title">Start Exam</div>
+            <div class="TimeCount">
+                <div class="TimeLeft">Time Left</div>
+                <div class="Seconds">15</div>
+            </div>
+            <div class="TimeLines"></div>
+        </header>
+        <div class="QuestionSection">
+            <div class="QuestionText">
+                <!-- <Span>1. What does HTML stand for?</Span> -->
+            </div>
+            <div class="QuestionOptions">
+                <div class="Options">
+                    <!-- <span>Hyper Text Preprocessor</span>
+                    <i class="fa-regular fa-circle-xmark"></i> -->
+                </div>
+                <div class="Options">
+                    <!-- <span>Hyper Text Markup Language</span>
+                    <i class="fa-regular fa-circle-check"></i> -->
+                </div>
+                <div class="Options">
+                    <!-- <span>Hyper Text Multiple Language</span>
+                    <i class="fa-regular fa-circle-xmark"></i> -->
+                </div>
+                <div class="Options">
+                    <!-- <span>Hyper Tool Multi Language</span>
+                    <i class="fa-regular fa-circle-xmark"></i> -->
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="QuestionFooter">
+                <!-- <p>1 of 5 Questions</p> -->
+            </div>
+            <button class="NextQuestion">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="resultBox">
+        <div class="ResultImg">
+            <img src="https://cdn.pixabay.com/photo/2015/10/28/16/47/cup-1010916_1280.jpg" alt="">
+        </div>
+        <div class="completeExam">You have finished your exam</div>
+        <div class="scoreText">
+            <!-- <span>Carry on you got <p>2</p> out of <P>5</P></span> -->
+        </div>
+        <div class="LastButtons">
+            <button class="RestartExam">Re-Exam</button>
+            <button class="QuitExam">Quit Exam</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
+
