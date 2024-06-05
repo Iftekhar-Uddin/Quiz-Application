@@ -176,15 +176,20 @@ function showResultPage(){
         let ScoreTag = '<span>Sorry you got <p>'+userScore+'</p> out of <P>'+questions.length+'</P></span>';
         ScoreText.innerHTML = ScoreTag;
     }
-    if(userScore > 5){
-        let ScoreTag = '<span>Congratulation! you got <p>'+userScore+'</p> out of <P>'+questions.length+'</P></span>';
-        ScoreText.innerHTML = ScoreTag;
-    }
-    if(userScore > 2){
+    if(userScore <= (questions.length/2.5)){
         let ScoreTag = '<span>Carry on you got <p>'+userScore+'</p> out of <P>'+questions.length+'</P></span>';
         ScoreText.innerHTML = ScoreTag;
     }
+    if(userScore > (questions.length/2)){
+        let ScoreTag = '<span>Good you got <p>'+userScore+'</p> out of <P>'+questions.length+'</P></span>';
+        ScoreText.innerHTML = ScoreTag;
+    }
+    if(userScore >= (questions.length/1.2)){
+        let ScoreTag = '<span>Congratulation! you got <p>'+userScore+'</p> out of <P>'+questions.length+'</P></span>';
+        ScoreText.innerHTML = ScoreTag;
+    }
 }
+
 
 function startTimer(time){
     TimeCounter = setInterval(timer, 1000);
@@ -220,7 +225,7 @@ function startTimerLine(time){
     function timer(){
         time = time + 1;
         timeLine.style.width = time + "px";
-        if(time > 319){
+        if(time > 299){
             clearInterval(counterLine);
         }
     }
